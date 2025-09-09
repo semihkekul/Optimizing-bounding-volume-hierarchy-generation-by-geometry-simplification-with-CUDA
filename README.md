@@ -1,8 +1,13 @@
 # OPTIMIZING BOUNDING VOLUME HIERARCHY GENERATION BY GEOMETRY SIMPLIFICATION WITH CUDA
 **This was my unfinished thesis project but I converted to an informal personal project!**
 
-In computer games, processing massive number of objects with high-precision collision detection is a challenging task. A well-known approach being used to tackle this important task is using two phases; a broad phase which includes bounding volume hierarchy(BVH) generation for preventing brute force collision testing among all the objects against each other and narrow phase for more precise collision detection among the objects filtered by broad phase. Also, a relatively new approach used is to use Graphical Processing Units(GPU) instead of Central Processing Units (CPU). 
-In this thesis, a geometric simplification method is and improved by using Level Of Detail (LOD) optimization on remesh calculation and other  parallel algorithm for broad phase collision is used for generating BVH structure. 
+In computer games, handling a large number of objects with accurate collision detection is a complex task. A common solution is to divide the process into two phases:
+
+Broad Phase: This step quickly filters out object pairs that are unlikely to collide, often using a Bounding Volume Hierarchy (BVH) to avoid checking every object against every other.
+Narrow Phase: This step performs detailed collision checks only on the filtered pairs from the broad phase.
+Recently, Graphics Processing Units (GPUs) have been increasingly used instead of traditional Central Processing Units (CPUs) to speed up this process.
+
+In this thesis, a geometric simplification method is enhanced using Level of Detail (LOD) optimization during remeshing. Additionally, a parallel algorithm is used in the broad phase to efficiently build the BVH structure.
 
 ## Results
 ![Generated bounding volumes](./docs/bunny.png) 
