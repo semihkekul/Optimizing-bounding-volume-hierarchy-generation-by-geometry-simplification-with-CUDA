@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{f8d22b63-73ee-4e28-b7da-101500d18036}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\application.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\camera.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gameObject.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tiny_obj_loader.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\glut.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\freeglut.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\freeglut_ext.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\freeglut_std.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\camera.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gameObject.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tiny_obj_loader.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\cuda.cuh">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gpuWrapper.cuh">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="source\cuda.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="source\gpuWrapper.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
